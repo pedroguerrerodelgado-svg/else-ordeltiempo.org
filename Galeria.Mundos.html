@@ -37,8 +37,14 @@
     </header>
 
     <!-- Migas de pan -->
-    <div class="container mx-auto px-4 md:px-8 pt-6">
-        <a href="index.html#artes" class="text-sm text-purple-300 hover:text-white transition-colors duration-300">&larr; Volver a Arte</a>
+    <div class="container mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-8 md:px-8 md:py-10">
+        <a href="index.html#artes" class="text-sm text-purple-300 transition-colors duration-300 hover:text-white">&larr; Volver a Arte</a>
+        <nav aria-label="Sistemas de mundos" class="flex flex-wrap items-center gap-2 text-sm">
+            <span class="font-semibold text-white">Sistemas:</span>
+            <a href="#kasterborus" class="rounded-full bg-orange-700 px-3 py-1 text-white transition-colors hover:bg-orange-600">Kasterborus</a>
+            <a href="#sistema-solar" class="rounded-full bg-yellow-500 px-3 py-1 text-red-950 transition-colors hover:bg-yellow-400">Sistema solar</a>
+            <a href="#otros-planetas" class="rounded-full bg-purple-800 px-3 py-1 text-white transition-colors hover:bg-purple-700">Otros planetas</a>
+        </nav>
     </div>
 
     <!-- Content for Mundos Gallery -->
@@ -49,8 +55,9 @@
                 Aquí encontrarás una colección detallada de ilustraciones y bocetos de los mundos que Kael ha visitado en sus aventuras.
             </p>
 
-            <h3 class="text-white font-semibold mb-2 text-2xl">Constelación de Kasterborus</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="kasterborus" class="mb-10 scroll-mt-6 rounded-2xl bg-orange-700 p-6 shadow-xl md:p-8">
+                <h3 class="mb-6 text-2xl font-semibold text-white">Constelación de Kasterborus</h3>
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <a href="Galifrey.html" title="Ir a la galería de Galifrey">
                     <div class="bg-red-900 p-6 rounded-lg shadow-xl">
                         <img loading="lazy" src="ImagenesSenordelTIEMPO/Imagenes Lugares/Planetas y sistemas/Sistema Kasterborus/Planetas/Galifrey.png" alt="Ilustración de Galifrey" class="w-full h-auto rounded-lg mb-4">
@@ -72,11 +79,11 @@
                         <p class="text-sm text-gray-300">Es un planeta muy parecido a la Tierra: tiene un 70% de tierra y un 30% de agua. Es un planeta donde los Señores del Tiempo hacen experimentos científicos y biológicos.</p>
                     </div>
                 </a>
+                </div>
             </div>
-            <br>
 
-            <div>
-                <h3 class="text-white font-semibold mb-2 text-2xl">Sistema solar</h3>
+            <div id="sistema-solar" class="mb-10 scroll-mt-6 rounded-2xl bg-yellow-500 p-6 shadow-xl md:p-8">
+                <h3 class="mb-6 text-2xl font-semibold text-red-950">Sistema solar</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <a href="#" title="Próximamente">
                         <div class="bg-red-900 p-6 rounded-lg shadow-xl">
@@ -136,10 +143,9 @@
                     </a>
                 </div>
             </div>
-            <br>
 
-            <div>
-                <h3 class="text-white font-semibold mb-2 text-2xl">Otros planetas</h3>
+            <div id="otros-planetas" class="scroll-mt-6 rounded-2xl bg-purple-800 p-6 shadow-xl md:p-8">
+                <h3 class="mb-6 text-2xl font-semibold text-white">Otros planetas</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <a href="Skaro.html" title="Ir a la galería de Skaro">
                         <div class="bg-red-900 p-6 rounded-lg shadow-xl">
